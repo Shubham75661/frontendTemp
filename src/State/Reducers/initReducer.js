@@ -7,20 +7,12 @@ const initSlice = createSlice({
     },
 
     reducers : {
-        increment : (state) =>{
-            state.value++;
-        },
-
-        decrement : (state) =>{
+        view : (state) =>{
             state.value--;
-        },
-
-        setValue : (state, action) =>{
-            state.value = action.payload;
         }
     }
 })
 
-export const {increment, decrement, setValue} = initSlice.actions;
+export const {view} = initSlice.actions;
 
 export default initSlice.reducer;
